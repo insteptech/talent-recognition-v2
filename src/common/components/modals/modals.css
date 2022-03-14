@@ -1,0 +1,60 @@
+.inbox-details-modal__body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inbox-details-modal__actions-container {
+    display: inline-block;
+    float: left;
+    button {
+        width: auto;
+    }
+}
+
+.inbox-details-modal__actions-container img {
+    height: 25px;
+    max-width: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.data-request-file .xb-dragdrop-box {
+    padding: 30px 48px;
+}
+.consent-name:hover {
+    cursor: pointer;
+}
+.sar-data-table td {
+    width: 33.333%;
+}
+
+.edit-modal .Select-input {
+    width: 100%;
+}
+.edit-modal .Select-input > input {
+    width: 100% !important;
+}
+.edit-modal .Select input {
+    display: block;
+}
+.locked-alert-padding {
+    padding-left: 20px;
+}
+.locked-alert {
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+}
+.report-range {
+    width: 30%;
+}
+.label-align {
+    margin-top: 5px;
+}
+.report-modal {
+    padding: 0px !important;
+}
+.sar-info-btn:hover {
+    background-color: transparent !important;
+}
+.sar-info-btn:focus {
+    background-color: transparent !important;
+}

@@ -1,0 +1,146 @@
+.input-loader {
+    z-index: 5;
+}
+
+.react-numeric-input {
+    .wrap {
+        position: relative;
+        display: inline-block;
+        &.hasFormControl {
+            display: block;
+        }
+    }
+
+    .plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2;
+        height: 10;
+        background: #029cd8;
+        margin: -5px 0 0 -1px;
+    }
+
+    .minus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 10px;
+        background: #a9a9a9;
+        margin: -5px 0px 0px -1px;
+    }
+
+    .btn {
+        position: absolute;
+        right: 2px;
+        width: 2.26ex;
+        text-align: center;
+        cursor: default;
+        transition: all 0.1s;
+        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1) inset, 1px 1px 3px rgba(255, 255, 255, 0.7) inset;
+        &.disabled {
+            opacity: 0.5;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        &:disabled {
+            opacity: 0.5;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        &:active {
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset, -1px -1px 4px rgba(255, 255, 255, 0.5) inset;
+        }
+    }
+
+    .btn-up {
+        position: absolute;
+        right: 2px;
+        width: 40px;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-style: solid;
+        text-align: center;
+        cursor: default;
+        transition: all 0.1s ease 0s;
+        box-shadow: none;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        border-width: 1px;
+        padding: 5px;
+        line-height: 18px;
+        i {
+            font-size: 10px;
+            top: 5px;
+        }
+    }
+
+    .btn-down {
+        top: 50%;
+        bottom: 2px;
+        border-radius: 0 0 2px 2px;
+        border-width: 0 1px 1px 1px;
+        &.mobile {
+            width: 40px;
+            bottom: 2px;
+            left: 2px;
+            top: 2px;
+            right: auto;
+            box-shadow: none;
+            border-radius: 2px;
+            border-width: 1px;
+            padding: 5px;
+            line-height: 18px;
+            i {
+                font-size: 10px;
+                top: 5px;
+            }
+        }
+    }
+
+    input {
+        padding-right: 55px !important;
+        padding-left: 30px;
+        box-sizing: border-box;
+        text-align: right !important;
+        height: 40px;
+        &:not {
+            border: 1px solid #ccc;
+            border-radius: 2;
+            padding-left: 4;
+            display: block;
+            line-height: normal;
+        }
+        &.mobile {
+            padding-left: 3.4ex;
+            padding-right: 3.4ex;
+            text-align: center;
+        }
+        &:disabled {
+            color: rgba(0, 0, 0, 0.3);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    .btn-plus {
+        background: #029cd8;
+        color: #fff;
+    }
+
+    .btn-minus {
+        background: #a9a9a9;
+        color: #fff;
+    }
+}
